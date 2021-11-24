@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent servicios = new Intent(getApplicationContext(), MainActivity2.class);
-                startActivity(servicios);
+               // Intent servicios = new Intent(getApplicationContext(), MainActivity2.class);
+               // startActivity(servicios);
+                Toast.makeText(getApplicationContext(), "IMAGENES: La futura función se implementará en la siguiente versión...",  Toast.LENGTH_SHORT).show();
             }
         });
-        text1 = (TextView) findViewById(R.id.text1);
     }
 
     @Override
@@ -45,14 +45,18 @@ public class MainActivity extends AppCompatActivity {
         if(id == R.id.productOpt){
             Intent productos = new Intent(getApplicationContext(), MainActivity2.class);
             startActivity(productos);
+            Toast.makeText(getApplicationContext(), "PRODUCTO: La futura función se implementará en la siguiente versión...", Toast.LENGTH_SHORT).show();
+
         }
         if(id == R.id.serviceOpt){
-            Intent servicios = new Intent(getApplicationContext(), MainActivity3.class);
-            startActivity(servicios);
+           // Intent servicios = new Intent(getApplicationContext(), MainActivity3.class);
+           // startActivity(servicios);
+            Toast.makeText(getApplicationContext(), "SERVICIO: La futura función se implementará en la siguiente versión...", Toast.LENGTH_SHORT).show();
         }
         if(id == R.id.sucurOpt){
-            Intent sucursales = new Intent(getApplicationContext(), MainActivity4.class);
-            startActivity(sucursales);
+           // Intent sucursales = new Intent(getApplicationContext(), MainActivity4.class);
+           // startActivity(sucursales);
+            Toast.makeText(getApplicationContext(), "SUCURSAL: La futura función se implementará en la siguiente versión...", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

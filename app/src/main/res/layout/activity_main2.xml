@@ -6,9 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Productos" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="107dp"
+            android:layout_height="24dp"
+            android:text="Productos" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="332dp"
+            android:layout_height="102dp"
+            android:text="En esta sección se contempla toda la información de los productos y tendra opciones de listas de productos de fiestas con sus accesos a detalle de cada producto" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
